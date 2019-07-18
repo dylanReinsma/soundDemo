@@ -28,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void stop(View view) {
+
+        mediaPlayer.seekTo(0);
+        mediaPlayer.stop();
+        mediaPlayer = MediaPlayer.create(this, R.raw.car);
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
